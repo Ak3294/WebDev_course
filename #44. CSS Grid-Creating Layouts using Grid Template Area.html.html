@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid template Area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: rgb(143, 116, 80);
+            border: 2px solid black;
+            padding: 13px 31px;
+
+        }
+
+        #navbar {
+            grid-area: navbar;
+            padding: 3px;
+
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar " class="item">
+            Home gallary contect us about us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            libero ullam? Provident saepe, reprehenderit blanditiis praesentium quos ad ut quia minus,
+            laborum mollitia labore! Temporibus quo, nulla omnis ab laborum,
+            nemo perferendis quam vero architecto praesentium voluptas accusamus hic natus sapiente
+            commodi eos distinctio? Eum deleniti vel porro. Minima, aperiam voluptas! Animi voluptas
+            officia, illo, consectetur rem officiis consequatur fugiat quas velit, veritatis nihil
+            pariatur dolorum doloremque nisi. Deleniti consequatur ipsa, officiis eveniet obcaecati
+            ratione sit, iste voluptatem dolor culpa soluta nesciunt nam explicabo adipisci nisi,
+            velit non aperiam quo doloribus atque cupiditate tenetur qui facere vitae! Excepturi,
+            assumenda neque.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            libero ullam? Provident saepe, reprehenderit blanditiis praesentium quos ad ut quia minus,
+            laborum mollitia labore! Temporibus quo, nulla omnis ab laborum,
+            nemo perferendis quam vero architecto praesentium voluptas accusamus hic natus sapiente
+            commodi eos distinctio? Eum deleniti vel porro. Minima, aperiam voluptas! Animi voluptas
+            officia, illo, consectetur rem officiis consequatur fugiat quas velit, veritatis nihil
+            pariatur dolorum doloremque nisi. Deleniti consequatur ipsa, officiis eveniet obcaecati
+            ratione sit, iste voluptatem dolor culpa soluta nesciunt nam explicabo adipisci nisi,
+            velit non aperiam quo doloribus atque cupiditate tenetur qui facere vitae! Excepturi,
+            assumenda neque.
+        </div>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div> -->
+    </div>
+</body>
+
+</html>

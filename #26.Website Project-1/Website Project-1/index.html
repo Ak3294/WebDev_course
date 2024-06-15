@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK GYM GROUP</title>
+
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+<style>
+    /* CSS resat */
+    body {
+        font-family: 'Goblin One', cursive;
+        /* font-family: f'Alfa Slab One', cursive; */
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("Gym\ images.jpg");
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 37px;
+        top: 13px;
+    }
+
+    .left img {
+        width: 90px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        margin: 29px auto;
+        width: 36%;
+        /* border: 2px solid rgb(30, 36, 97); */
+    }
+
+    .Right {
+        position: absolute;
+        right: 37px;
+        top: 49px;
+        display: inline-block;
+        /* border: 2px solid rgb(105, 179, 56); */
+    }
+
+    .Right img {
+        width: 50%;
+        filter: invert(100%);
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 35px 7px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Acme', sans-serif;
+        margin: 0px 9px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(248, 247, 247);
+        padding: 4px 14px;
+        /* border: 2px solid gray; */
+        border-radius: 10px;
+        font-size: 13px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .container {
+        font-family: 'Acme', sans-serif;
+        /* border: 2px solid white; */
+        margin: 120px 80px;
+        padding: 35px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Acme', sans-serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1,
+    h2 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        text-align: center;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="GYM logo.png" alt="">
+            <div></div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contect Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for bottons -->
+        <div class="Right">
+
+            <!-- <li><a href="#" >Sign in</a></li> -->
+            <!-- <img src="images sign in.jpg" alt=""> -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Welcome to Akshay's GYM</h2>
+        <h1>RESISTER NOW!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Contect-Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email-Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+/*CSS Resart*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* html */
+html{ 
+    scroll-behavior: smooth;
+}
+
+/*CSS Variable*/
+:root{
+    --navbar--height:59px;
+}
+
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items:center;
+    position: sticky;
+    top: 0%;
+}
+#navbar::before{
+    content:"";
+    background-color: burlywood;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*Navigation Bar:logo and Images*/
+#logo{
+    margin:3px 31px;
+
+}
+#logo img{
+    height:62px;
+    margin: 3px 6px;
+    border-radius: 32px;
+}
+
+
+/* Nevigation Bar:List stylling */
+/* #navbar{
+    position: absolute;
+    top: 0;
+} */
+#navbar ul{
+    font-family: 'Bree Serif', serif;
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    /* color: black; */
+    
+}
+#navbar ul li a{
+    Color:rgb(4, 150, 246);
+    display: block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+   background-color: rgb(194, 172, 74);
+}
+/* home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Bree Serif', serif;
+    height: 497px; */
+}
+#home::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:url('background.jpg')no-repeat center center/cover;
+    height: 330px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.5;
+}
+#home h1{
+    color: rgb(65, 153, 57);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    /* font-size: 3.5rem; */
+}
+#home p{
+    color:goldenrod;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+.box{
+    background-color: rgb(185, 189, 165);
+    border-width: 2px;
+    border-style: solid;
+    border-color: brown;
+    border-image: initial;
+    padding: 32px;
+    border-radius: 34px;
+    margin: -9px 2px 25px;
+
+    /* border-radius: 34px;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    background: #f2f2f2;
+    margin-bottom: 20px; */
+}
+.box img{
+    /* border: 2px solid brown; */
+    /* height: 50px; */
+    margin: auto;
+    display: block;
+    height: 134px;
+    border-radius: 25px;
+}
+#services.box p{
+    font-family: 'Bree Serif', serif;
+
+}
+/* client section */
+#client-section{
+  /* height: 344px; */
+  position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('imgbin-food-background-EDdTnWZrUj2fK8MMVxHAempdB.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 104%;
+    z-index: -1;
+    opacity:0.5;
+  }
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+ padding: 34px;
+}
+#clients img{
+    height: 108px;
+    /* justify-content: center;
+    align-items: center; */
+        /* width: 66px;
+        padding: 6px; */
+    }
+ 
+
+/* #services.box p{
+    /* font-family: 'Bree Serif', serif; */
+
+/* .h-primary center{
+      font-size: 3.8rem;
+      padding: 12px;
+      
+      
+}
+.h-secondary center{
+    font-size: 2.8rem;
+      padding: 12px;
+      border: 2px solid brown;
+
+      */
+
+/* contect Section */
+#contact{
+    
+    position: relative;
+    /* background:url('Contect.jpg')no-repeat center center/cover; */
+}
+#contact::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    background:url('Contect.jpg')no-repeat center center/cover;
+    /* font-family: 'Bree Serif', serif; */
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    /* width: 80%; */
+    
+    
+}
+/* #contact-box input{
+    
+
+} */
+#contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 23px;
+}
+
+
+
+/* .center{
+    font-family: 'Bree Serif', serif;
+} */
+/* Utility classe */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(47, 47, 42);
+    color: thistle;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

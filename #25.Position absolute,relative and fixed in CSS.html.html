@@ -1,0 +1,33 @@
+<!-- Position of CSS:Static(by default),absolute,Relative,Fixed,Sticky -->
+<!-- Relative position: It means relative to its normal position,
+    box are floated in any direction for our relative position -->
+<!-- absolute Position:Relative to the parent -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: inline-block;  /* To Arrange boxes in a line*/
+            border:2px solid black ;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        .box3{
+            position: fixed;
+            right: 4px;
+            bottom:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">Notes and Query</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

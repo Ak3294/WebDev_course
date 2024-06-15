@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Example</title>
+</head>
+
+<body style="text-align: center;">
+    <h1>Loading a web page in DIV</h1>
+    <div id="info">This Sentence will be replaced </div>
+
+    <script>
+        params = "url=amazon.com/gp/aw"
+        request = new ajaxRequest();
+
+        request.open("POST", "urlpost.php", true)
+        request.setRequestHeader("Content-type",
+            "applocation/x-www-form-urlencoded");
+        request.setRequestHeader("Content-length", params.length)
+        request.setRequestHeader("Connection", "close");
+
+        request.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                if (this.status == 200) {
+                    if (this.responceText != NULL) {
+                        document.getElementById('info').innerHTML = this.readyText
+                    }
+                    else alert("Ajax error :No data recieved")
+                }
+                else alert("ajax error :" + this.statusText)
+            }
+        }
+
+        request.send(params)
+        function ajaxRequest() {
+            try {
+                var request = new XMLHttpRequest()
+            }
+            catch (e1) {
+                try {
+                    request = new ActiveXObject("Msxml2.XMLHTTP")
+                }
+                catch (e2) {
+                    try {
+                        request = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    catch (e3) {
+                        request = false;
+                    }
+                }
+            }
+            return request
+        }
+
+    </script>
+     <?php  include("urlpost.php");?>
+</body>
+
+</html>

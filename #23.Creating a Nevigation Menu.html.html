@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevigation</title>
+    <style>
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar {
+            background-color: rgb(5, 5, 8);
+            border-radius: 30px;
+        }
+
+        .navbar li {
+            float: left;
+            /*All key words float in same line*/
+            list-style: none;
+            /*Remove Bullets*/
+            padding: 3px 3px;
+            margin: 11px 11px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            margin: 8px 4px;
+        }
+        .navbar li a:hover{
+            
+            color: blueviolet;
+        }
+
+        .Search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 5px 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <!-- for underlined navigation bar Element -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contect Us</a></li>
+                <li><a href="#" >Sign in</a></li>
+                <div class="Search">
+                    <input type="text" name="Search" id="Search" placeholder="Search">
+
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

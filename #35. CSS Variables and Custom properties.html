@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable/Custom Properties</title>
+    <style>
+        /* Global Variable Declaration */
+        /* :root{
+            --box-color:green;
+            maxw:233px;
+        } */
+        .box {
+            --box-color: purple;
+            /*Local-variable Declaration*/
+            width: 200px;
+            height: 200px;
+            background-color: rgb(147, 147, 182);
+            border: 2px solid greenyellow;
+            margin: 2px 9px;
+            box-shadow: 3px 3px var(--box-color);
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin:auto;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>

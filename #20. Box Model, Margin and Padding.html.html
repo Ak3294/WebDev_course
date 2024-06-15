@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin-top: 3px;
+            margin-bottom: 5px;
+
+        }
+        .akshay {
+            background-color: rgb(179, 168, 179);
+            border: 3px solid rgb(83, 48, 82);
+            margin: 32px 19px;
+            /* We can set padding right ,left,top,bottem like this */
+            /*  padding-right: 9px;
+           padding-left: 35px;
+           padding-top: 34px;
+           padding-bottom: 34px; */
+            padding: 23px 56px 23px 35px;/*padding/margin=top right bottem left*/
+            /*padding:34px 19px=(top/bottom)*(left/right);    
+            /*when the reading of top and bottom &left and right are same*/
+            border-radius: 23px;
+            width: 533px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="akshay">
+        <h3>This is my Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quibusdam, laboriosam velit explicabo perspiciatis reiciendis repudiandae
+            dolorum sit laborum consequatur perferendis quaerat possimus,
+            sapiente nihil pariatur iusto quia deserunt voluptatibus ipsam!</p>
+    </div>
+
+    <div class="akshay">
+        <h3>This is my Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quibusdam, laboriosam velit explicabo perspiciatis reiciendis repudiandae
+            dolorum sit laborum consequatur perferendis quaerat possimus,
+            sapiente nihil pariatur iusto quia deserunt voluptatibus ipsam!</p>
+    </div>
+
+    <div class="akshay">
+        <h3>This is my Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quibusdam, laboriosam velit explicabo perspiciatis reiciendis repudiandae
+            dolorum sit laborum consequatur perferendis quaerat possimus,
+            sapiente nihil pariatur iusto quia deserunt voluptatibus ipsam!</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        /* Those values are transition which have continuous values like colours */
+        
+        #box {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            background-color: indianred;
+            justify-content: center;
+            align-items: center;
+            transition-property: background-color;
+            /* transition-delay: 1s; */
+            transition-duration: 5s;
+            /* transition-timing-function: ease-in;  */
+            /* transition: all indianred  ease-in-out 5s; */
+            /*transition Short Trick*/
+        }
+
+        #box:hover {
+            background-color: khaki;
+            height: 400px;
+            width: 400px;
+            border-radius: 45px;
+            transition-duration: 5s;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is Transition</h3>
+    <div class="container">
+        <div id="box">
+            This is My Box
+        </div>
+    </div>
+
+</body>
+
+</html>

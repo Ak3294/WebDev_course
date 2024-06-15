@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frame and Animations</title>
+    <style>
+        .container {
+            background-color: rgb(114, 25, 25);
+        }
+
+        .box {
+            background-color: rgb(155, 125, 155);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: Akshay1; */
+            animation-name:Akshay2;
+            animation-duration: 3s;/*Time of Animation*/
+            animation-iteration-count:2;/*Number of times */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-in;
+            animation-delay: 1s; */
+            /* short-cut key of animation */
+            /* animation: name duration timing-function delay iteration-count 
+            direction fill-mode; */
+
+        }
+        @keyframes Akshay2{
+            0%{
+             top:0;
+             left:0;
+            }
+            25%{
+             top:250px;
+             left:0px;
+            }
+            75%{
+              top:250px;
+              left:250px;
+            }
+            100%{
+              top:0px;
+              left:250px;
+            }
+        }
+
+        @keyframes Akshay1 {
+            from {
+                width: 1px
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 2px soild black;
+            display: flex;
+            /* Flex properties of Flexbox container */
+            /* Initilize the container as flex box */
+            /*flex-direction: rows;  /* Direction of flex is always row(by default) */
+            /* flex-direction: column;// Direction of flex in direction of rows */
+            /* flex-direction: row-reverse; flex box is reverse in row direction */
+            /* flex-direction: column-reverse; flex box is reverse in column direction */
+            /*flex-wrap: wrap;// Wraping the box */
+            /* flex-flow: row wrap; //This is a short hand of direction and Wrapping */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* align-items:center; */
+            /* align-items:flex-end ; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+        }
+
+        .item {
+
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #item-1 {
+            /* Flex Properties For Flex Item */
+            /* order: 2;// The Order is higher then box is shown after */
+            /* flex-grow: 3;//Box are Bigger then other,Negative Number are Invalid  */
+            /* flex-shrink: 3;//Box are seen smaller then other */
+            /* flex-basis: 320px; */
+            /* when flex-direction is set to row flex-basis:will control width */
+            /* when flex-direction is set to column flex-basis:will control heigth */
+        }
+
+        #item-2 {
+            /* short hand of flex:grow  shrink  basis */
+            /* flex: 2  2 344px; */
+            /* align-self: flex-end;
+            align-self: flex-start; */
+            /* align-self: center; */
+            
+        }
+
+        #item-3 {}
+
+        #item-4 {}
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox </h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+    </div>
+
+</body>
+
+</html>
